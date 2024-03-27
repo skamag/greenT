@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* body{
+    height: 100vh;
+    background-image: url('./images/leaves.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: left;
+} */
+/* @media screen and (max-width: 800px) {
+    body{
+      background-image: url('./images/leaves_mobile.jpg');
+      background-position-y: 100px;
+    }
+} */

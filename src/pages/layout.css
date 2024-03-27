@@ -1,0 +1,108 @@
+.navbar{
+    position: fixed;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10%; */
+    /* background-color: rgb(251, 251, 251); */
+    /* background-image: linear-gradient(90deg, rgb(252, 252, 252), rgba(218, 218, 41, 0)); */
+}
+.navText{
+    display: flex;
+    align-items: baseline;
+    gap: 100px;
+    margin-left: 5%;
+
+}
+.logo{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 50px;
+    background: -webkit-linear-gradient(180deg, #3a563a, #5b9560);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: 'VT323'; */
+    font-family: 'Courier New';
+}
+.logo-t{
+    font-size: 50px;
+    font-family: sans-serif;
+
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Edu NSW ACT Foundation";
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    transition: all 0.1s linear;
+}
+.navbarMobile{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    padding: 50px 20px;
+    background-color: black;
+    transform: translateY(100px);
+}
+.linksMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.linkMobile{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 400px) {
+    .navbar{
+        background-color: white;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar{
+        background-color: white;
+    }
+    .links{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 5px;
+    }
+}
+
+.navbarMobile-toggle{
+    display: flex;
+}
+.burger-toggle .line1{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.burger-toggle .line2{
+    opacity: 0;
+}
+.burger-toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
