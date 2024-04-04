@@ -1,6 +1,6 @@
 .navbar{
     position: fixed;
-    min-height: 100px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 .links{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .link{
     text-decoration: none;
@@ -54,13 +54,13 @@
     transition: all 0.1s linear;
 }
 .navbarMobile{
-    display: none;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     right: 0;
-    padding: 50px 20px;
+    padding: 50px;
     background-color: black;
-    transform: translateY(100px);
+    transition: all 0.1s linear;
+    visibility: hidden;
 }
 .linksMobile{
     display: flex;
@@ -73,6 +73,10 @@
     color: white;
     text-decoration: none;
 }
+/* .footer{
+    height: 100px;
+    background-color: black;
+} */
 
 @media screen and (max-height: 400px) {
     .navbar{
@@ -92,10 +96,16 @@
         justify-content:center;
         gap: 5px;
     }
-}
-
-.navbarMobile-toggle{
-    display: flex;
+    .navbarMobile{
+        transform: translate(50vw, 100px);
+        opacity: 0;
+    }
+    .navbarMobile-toggle{
+        display: flex;
+        transform: translate(0, 100px);
+        visibility: visible;
+        opacity: 1;
+    }
 }
 .burger-toggle .line1{
     transform: rotate(-45deg) translate(-6px, 6px);
