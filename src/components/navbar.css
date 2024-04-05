@@ -1,17 +1,19 @@
-/* .navbar{
+.navbar{
     position: fixed;
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* gap: 10%; */
+    /* background-color: rgb(251, 251, 251); */
+    /* background-image: linear-gradient(90deg, rgb(252, 252, 252), rgba(218, 218, 41, 0)); */
 }
 .navText{
     display: flex;
     align-items: baseline;
     gap: 100px;
     margin-left: 5%;
-
 }
 .logo{
     text-decoration: none;
@@ -21,12 +23,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* font-family: 'VT323'; */
     font-family: 'Courier New';
 }
 .logo-t{
     font-size: 50px;
     font-family: sans-serif;
-
 }
 .links{
     display: flex;
@@ -35,8 +37,27 @@
 .link{
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    /* letter-spacing: 1px; */
     font-size: 25px;
     font-family: "Edu NSW ACT Foundation";
+}
+.startButtonContainer{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+}
+.startButton{
+    background-image: linear-gradient(rgb(5, 180, 5), rgb(65, 164, 86));
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-wrap: nowrap;
+    cursor: pointer;
 }
 .burger{
     display: none;
@@ -82,6 +103,12 @@
     .links{
         display: none;
     }
+    .startButtonContainer{
+        display: none;
+    }
+    .startButton{
+        margin-top: 100px;
+    }
     .burger{
         display: flex;
         flex-direction: column;
@@ -107,4 +134,4 @@
 }
 .burger-toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
-} */
+}
