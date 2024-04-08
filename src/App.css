@@ -16,3 +16,29 @@
       background-position-y: 100px;
     }
 } */
+.cardsContainerSection{
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .cardsContainer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .cardsContainer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cardsContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

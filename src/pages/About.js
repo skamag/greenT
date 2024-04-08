@@ -1,4 +1,5 @@
 import Article from '../components/Article'
+import leaves from '../images/leaves.jpg'
 import './about.css'
 
 export default function About() {
@@ -10,22 +11,22 @@ export default function About() {
                 <p>Vi ønsker å hjelpe bedrifter og andre som ønsker å forminske sitt klimaavtrykk gjennom energieffektivisering av nettsider.</p>
             </section>
             <section className='cardsContainer'>
-                <Article>
+                <Article image={leaves}>
                     <h3>Overskrift</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </Article>
-                <Article>
+                <Article image={leaves}>
                     <h3>Overskrift</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </Article>
-                <Article>
+                <Article image={leaves}>
                     <h3>Overskrift</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </Article>
-                <Article>
+                <Article image={leaves}>
                     <h3>Overskrift</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

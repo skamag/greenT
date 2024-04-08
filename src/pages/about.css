@@ -1,6 +1,11 @@
 .navbar{
     background-color: white;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .aboutContainer{
     padding: 100px 0;
     width: 100%;

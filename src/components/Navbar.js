@@ -36,7 +36,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className='startButtonContainer'>
-                    <button className='startButton'>Kom i gang</button>
+                    <Link className='startButton' to='start'>Kom i gang</Link>
                 </div>
                 <div className={`burger ${isToggle ? 'burger-toggle' : null}`} onClick={handleClick}>
                     <div className='line1'></div>
@@ -49,7 +49,7 @@ export default function Navbar() {
                     <Link className='linkMobile' to='/tjenester' onClick={handleClick}>Tjenester</Link>
                     <Link className='linkMobile' to='/om' onClick={handleClick}>Om oss</Link>
                     <Link className='linkMobile' to='/kontakt' onClick={handleClick}>Kontakt</Link>
-                    <button className='startButton'>Kom i gang</button>
+                    <button className='startButton' to='/start' onClick={handleClick}>Kom i gang</button>
                 </div>
             </nav>
         </>
