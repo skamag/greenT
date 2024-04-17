@@ -7,7 +7,6 @@
 .cardImageContainer{
     background-color: white;
     box-shadow: 0 0 8px 2px rgb(220, 220, 220);
-    height: 160px;
     overflow-y: hidden;
     display: flex;
     align-items: center;

@@ -1,5 +1,26 @@
 .footerContainer{
-    height: 400px;
     background-color: black;
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    gap: 100px;
+}
+.footerLeft, .footerCenter, .footerRight{
+    color: white;
+}
+.footerHeader{
+    margin-bottom: 10px;
+}
+.footerContainer p{
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px){
+    .footerContainer{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .footerContainer{
+        grid-template-columns: auto;
+    }
 }

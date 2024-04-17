@@ -12,7 +12,7 @@ export default function Navbar() {
     const handleClick = () => {
         isToggle ? setIsToggle(false) : setIsToggle(true)
 
-        if(isToggle) {
+        if(!isToggle) {
             window.addEventListener("scroll", function checkScroll() {
                 if(window.scrollY>5){
                     setIsToggle(false)

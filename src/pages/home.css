@@ -1,6 +1,6 @@
 .homeHeaderContainer{
     height: calc(100vh);
-    background-image: url('../images/leaves.jpg');
+    background-image: url('../images/leaves-noText.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: calc(50%);
@@ -21,7 +21,7 @@
 } */
 @media screen and (max-width: 600px){
     .homeHeaderContainer{
-        background-image: url('../images/leaves_mobile.jpg');
+        background-image: url('../images/leaves-noText_mobile.jpg');
         background-position-y: top;
     }
 }

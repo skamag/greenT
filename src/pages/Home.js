@@ -1,6 +1,5 @@
 import Article from '../components/Article'
 import leaves from '../images/leaves.jpg'
-import birds from '../images/birds.jpg'
 import './home.css'
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
                         <h3>Nettsider</h3>
                         <p>Vi produserer miljøvennlige nettsteder for både kommersielt og privat bruk. Vi streber etter å skape brukervennlige og søkemotoroptimaliserte webløsninger uten å ofte design og estetikk.</p>
                     </Article>
-                    <Article image={birds}>
+                    <Article image={leaves}>
                         <h3>Energieffektivisering</h3>
                         <p>Vi kan hjelpe deg med å gjøre ditt nettsted mer miljøvennlig gjennom redesign og oppdateringer.</p>
                         <p>Vi kan hjelpe deg med å gjøre ditt nettsted mer miljøvennlig gjennom redesign og oppdateringer.</p>
