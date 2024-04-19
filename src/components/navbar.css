@@ -77,8 +77,9 @@
     right: 0;
     padding: 50px;
     background-color: black;
-    transition: all 0.1s linear;
+    transition: all 0.5s ease-in;
     visibility: hidden;
+    z-index: 10;
 }
 .linksMobile{
     display: flex;
@@ -91,7 +92,15 @@
     color: white;
     text-decoration: none;
 }
-
+.darkScreen{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    height: 1000%;
+    width: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
 @media screen and (max-height: 400px) {
     .navbar{
         background-color: white;
@@ -117,7 +126,7 @@
         gap: 5px;
     }
     .navbarMobile{
-        transform: translate(50vw, 100px);
+        transform: translate(40vw, 100px);
         opacity: 0;
     }
     .navbarMobile-toggle{
@@ -135,4 +144,9 @@
 }
 .burger-toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
+}
+.darkScreen-toggle{
+    display: block;
+    visibility: visible;
+    opacity: 0.3;
 }

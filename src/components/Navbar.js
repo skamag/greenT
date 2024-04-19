@@ -24,7 +24,7 @@ export default function Navbar() {
 
     return(
         <>
-            <nav className='navbar'>
+            <nav className={`navbar ${isToggle ? 'navbar-toggle' : null}`}>
                 <div className='navText'>
                     <div>
                         <Link className='logo' to='/' onClick={removeMobileNav}>green<span className='logo-t'>T</span></Link>
@@ -52,6 +52,7 @@ export default function Navbar() {
                     <button className='startButton' to='/start' onClick={handleClick}>Kom i gang</button>
                 </div>
             </nav>
+            <div className={`darkScreen ${isToggle ? 'darkScreen-toggle' : null}`}></div>
         </>
     )
 }

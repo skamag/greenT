@@ -24,4 +24,7 @@
         background-image: url('../images/leaves-noText_mobile.jpg');
         background-position-y: top;
     }
+    .cardsContainerSection{
+        margin: 0;
+    }
 }
