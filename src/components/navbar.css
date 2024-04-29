@@ -72,12 +72,12 @@
     transition: all 0.1s linear;
 }
 .navbarMobile{
-    justify-content: center;
     position: fixed;
     right: 0;
+    top: 100px;
+    bottom: 0;
     padding: 50px;
     background-color: black;
-    transition: all 0.5s ease-in;
     visibility: hidden;
     z-index: 10;
 }
@@ -96,10 +96,11 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    height: 1000%;
+    height: 100%;
     width: 100%;
     background-color: black;
     transition: all 0.5s ease-in;
+    overflow-y: hidden;
 }
 @media screen and (max-height: 400px) {
     .navbar{
@@ -126,12 +127,12 @@
         gap: 5px;
     }
     .navbarMobile{
-        transform: translate(40vw, 100px);
+        transform: translate(40vw, 0);
         opacity: 0;
+        transition: all 0.5s ease-in;
     }
     .navbarMobile-toggle{
-        display: flex;
-        transform: translate(0, 100px);
+        transform: translate(0, 0);
         visibility: visible;
         opacity: 1;
     }
@@ -149,4 +150,5 @@
     display: block;
     visibility: visible;
     opacity: 0.3;
+    height: 1000%;
 }

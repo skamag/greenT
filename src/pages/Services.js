@@ -1,9 +1,29 @@
+import Article from '../components/Article'
+import leaves from '../images/leaves.jpg'
 import './services.css'
 
 export default function Services() {
     return(
         <main className='servicesContainer'>
             
+            <section className='cardsContainerSection'>
+                {/* <h3 className='cardsContainerHeader'>Hva kan vi hjelpe til med?</h3> */}
+                <div className='cardsContainer'>
+                    <Article image={leaves}>
+                        <h3>Produksjon av nettsider</h3>
+                        <p>Vi produserer miljøvennlige nettsteder for både kommersielt og privat bruk. Vi streber etter å skape brukervennlige og søkemotoroptimaliserte webløsninger uten å ofte design og estetikk.</p>
+                    </Article>
+                    <Article image={leaves}>
+                        <h3>Energieffektivisering</h3>
+                        <p>Vi kan hjelpe deg med å gjøre ditt nettsted mer miljøvennlig gjennom redesign og oppdateringer.</p>
+                        <p>Vi kan hjelpe deg med å gjøre ditt nettsted mer miljøvennlig gjennom redesign og oppdateringer.</p>
+                    </Article>
+                    <Article image={leaves}>
+                        <h3>Drift og vedlikehold</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </Article>
+                </div>
+            </section>
         </main>
     )
 }

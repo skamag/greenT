@@ -1,26 +1,18 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 
-export default function Navbar() {
-    const [isToggle, setIsToggle] = useState(false)
-
-    const removeMobileNav = () => {
-        isToggle && setIsToggle(false)
-    }
-
-    const handleClick = () => {
-        isToggle ? setIsToggle(false) : setIsToggle(true)
-
-        if(!isToggle) {
-            window.addEventListener("scroll", function checkScroll() {
-                if(window.scrollY>5){
-                    setIsToggle(false)
-                    window.removeEventListener("scroll", checkScroll)
-                }
-            })
-        }
-    }
+export default function Navbar({ isToggle, removeMobileNav, handleClick }) {
+    useEffect(() => {
+        const handleResize = () => {
+            window.innerWidth >= 800 ? removeMobileNav() : console.log('error')
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    });
 
     return(
         <>
