@@ -5,6 +5,7 @@ export default function Footer() {
         <footer className='footerContainer'>
             <section className='footerMain'>
                 <div className='footerLeft'>
+                    <h5 className='footerHeader'>BESØKSADRESSE</h5>
                     <p>greenT AS</p>
                     <p>Fantasiveien 42</p>
                     <p>0000 OSLO</p>
@@ -17,7 +18,7 @@ export default function Footer() {
                 <div className='footerRight'>
                     <h5 className='footerHeader'>HJELP</h5>
                     <p>Ofte stilte spørsmål</p>
-                    <p>Retur</p>
+                    <p>Rettigheter</p>
                     <p>Søk</p>
                 </div>
             </section>
